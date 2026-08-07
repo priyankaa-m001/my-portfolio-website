@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Mhaske | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6e3;
+            background-image: radial-gradient(#00000012 1px, transparent 1px);
+            background-size: 14px 14px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            gap: 25px;
+            padding: 20px 20px;
+            text-align: center;
+            background-color: #ffde59;
+            border-bottom: 4px solid #1a1a1a;
+        }
+        .container a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-family: 'Bangers', cursive;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        .container a:hover {
+            color: #e63946;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 3rem;
+            color: #1a1a1a;
+            text-shadow: 3px 3px 0 #ffde59, 6px 6px 0 #e63946;
+        }
+        .content img {
+            border: 5px solid #1a1a1a;
+            border-radius: 50%;
+            box-shadow: 8px 8px 0 #e63946;
+            margin-top: 20px;
+        }
+
+        .about {
+            padding: 50px;
+            background-color: rgb(250, 199, 208);
+            border-top: 4px solid #1a1a1a;
+            border-bottom: 4px solid #1a1a1a;
+        }
+        .about h2 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+        }
+
+        /* PROJECTS - side by side comic panels */
+        .projects {
+            padding: 50px;
+        }
+        .projects h2 {
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .project-item {
+            background: #fff;
+            border: 4px solid #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 7px 7px 0 #1a1a1a;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .project-item:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 10px 10px 0 #e63946;
+        }
+        .project-item h3 {
+            font-size: 1.4rem;
+            color: #e63946;
+            margin-top: 0;
+        }
+        .project-item a {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 6px 14px;
+            background: #ffde59;
+            border: 3px solid #1a1a1a;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+        .project-item a:hover {
+            background: #e63946;
+            color: #fff;
+        }
+
+        /* SKILLS - sliding boxes */
+        .skills {
+            padding: 50px 0;
+            background-color: rgb(250, 199, 208);
+            border-top: 4px solid #1a1a1a;
+            border-bottom: 4px solid #1a1a1a;
+            overflow: hidden;
+        }
+        .skills h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+        .skills-track {
+            display: flex;
+            width: max-content;
+            animation: slide 18s linear infinite;
+        }
+        .skills-track ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-track li {
+            background: #fff;
+            border: 3px solid #1a1a1a;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin: 0 12px;
+            font-family: 'Bangers', cursive;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            box-shadow: 4px 4px 0 #1a1a1a;
+            white-space: nowrap;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .education {
+            padding: 50px;
+            text-align: center;
+        }
+        .education h2 {
+            font-size: 2.2rem;
+        }
+        .education-item {
+            background: #fff;
+            border: 3px solid #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 5px 5px 0 #1a1a1a;
+            padding: 15px 20px;
+            margin: 15px auto;
+            max-width: 400px;
+        }
+
+        .contact {
+            padding: 50px;
+            text-align: center;
+            background-color: #ffde59;
+            border-top: 4px solid #1a1a1a;
+        }
+        .contact h2 {
+            font-size: 2.2rem;
+        }
+        .contact a {
+            color: #1a1a1a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </section>
+
+    <div class="content" id="home">
+        <h1>Hi, I am Priyanka, a Frontend Developer</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Wi8LzX64VV6EFpk3BR7XqIzTKCU0eEAc6rq7jBQGVg&s=10"
+            alt="Priyanka Mhaske" width="200" height="200">
+    </div>
+
+    <div class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Priyanka Mhaske — a Frontend Developer based in Nashik, India.
+            I recently graduated with a BCA and love turning ideas into real, working web applications.
+            I work with HTML, CSS, JavaScript, PHP, and MySQL, and I've been exploring AI integration using Python and LLM APIs.
+        </p>
+        <p>
+            I enjoy building things end-to-end — from designing the interface to deploying the final product.
+            Some of my projects include a multi-user e-commerce platform for farming equipment and an AI-powered quiz generator.
+            I'm currently learning React to build more dynamic, modern interfaces,
+            and I'm always excited to pick up new tools and keep growing as a developer.
+        </p>
+        <p>
+            I'm open to entry-level Frontend Developer and AI-adjacent roles — feel free to check out my work or get in touch!
+        </p>
+    </div>
+
+    <div class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+
+            <div class="project-item">
+                <h3>AgriBazaar — Farming Equipment Marketplace</h3>
+                <p>
+                    A responsive e-commerce platform for buying and selling agricultural tools, with distinct
+                    buyer and seller roles. Built with multi-user authentication, automated billing/invoice
+                    generation, and warehouse inventory management backed by custom CRUD operations in MySQL.
+                </p>
+                <p><strong>Tech:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                <a href="#" target="_blank">View Code</a>
+            </div>
+
+            <div class="project-item">
+                <h3>AI Study Buddy — Quiz Generator</h3>
+                <p>
+                    An AI-powered web app that generates custom multiple-choice quizzes from any topic or notes,
+                    with instant scoring and explanations. Integrated the Groq LLM API to dynamically generate
+                    quiz content, with secure server-side handling of API keys.
+                </p>
+                <p><strong>Tech:</strong> Python, Streamlit, Groq AI API</p>
+                <a href="#" target="_blank">View Code</a>
+                <a href="#" target="_blank">Live Demo</a>
+            </div>
+
+            <div class="project-item">
+                <h3>Ask My Portfolio — AI Chatbot</h3>
+                <p>
+                    An interactive chatbot built with the OpenAI API that answers questions about my portfolio,
+                    deployed via Vercel serverless functions. Includes interactive API documentation with
+                    tabbed code samples and a live Try-It panel.
+                </p>
+                <p><strong>Tech:</strong> JavaScript, OpenAI API, Vercel</p>
+                <a href="#" target="_blank">View Code</a>
+                <a href="#" target="_blank">Live Demo</a>
+            </div>
+
+            <div class="project-item">
+                <h3>Brew & Bliss</h3>
+                <p>
+                    A responsive landing page designed for a coffee shop, focused on clean layout and visual
+                    presentation.
+                </p>
+                <p><strong>Tech:</strong> HTML, CSS</p>
+                <a href="#" target="_blank">View Code</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-track">
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Python</li>
+                <li>React (learning)</li>
+                <li>Git & GitHub</li>
+                <li>AI APIs</li>
+                <li>Prompt Engineering</li>
+            </ul>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Python</li>
+                <li>React (learning)</li>
+                <li>Git & GitHub</li>
+                <li>AI APIs</li>
+                <li>Prompt Engineering</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="education" id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>BCA — Bachelor of Computer Applications</h3>
+            <p>BYK College, Savitribai Phule Pune University (SPPU)</p>
+            <p>2025 · SGPA: 8.25</p>
+        </div>
+        <div class="education-item">
+            <h3>HSC (12th, Commerce)</h3>
+            <p>KTHM College, Savitribai Phule Pune University (SPPU)</p>
+            <p>2022 · 69%</p>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:priyamhask2011@gmail.com">priyamhask2011@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/priyanka-mhaske" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/priyankaa-m001" target="_blank">GitHub</a></p>
+    </div>
+
+</body>
+</html>
