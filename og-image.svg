@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fdf6e3"/>
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#ffde59" stroke="#1a1a1a" stroke-width="6"/>
+  <text x="600" y="260" font-family="sans-serif" font-size="84" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Priyanka Mhaske</text>
+  <text x="600" y="350" font-family="sans-serif" font-size="48" text-anchor="middle" fill="#e63946">Frontend Developer</text>
+  <text x="600" y="430" font-family="sans-serif" font-size="32" text-anchor="middle" fill="#1a1a1a">HTML · CSS · JavaScript · PHP · Python · AI APIs</text>
+</svg>

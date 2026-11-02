@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Mhaske | Frontend Developer</title>
+    <meta name="description"
+        content="Portfolio of Priyanka Mhaske - Frontend Developer based in Nashik, India. Skilled in HTML, CSS, JavaScript, PHP, Python, and AI APIs.">
+    <meta property="og:title" content="Priyanka Mhaske | Frontend Developer">
+    <meta property="og:description"
+        content="Frontend Developer based in Nashik, India. Skilled in HTML, CSS, JavaScript, PHP, Python, and AI APIs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://priyankaa-m001.github.io/my-portfolio-website/">
+    <meta property="og:image" content="https://priyankaa-m001.github.io/my-portfolio-website/og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://priyankaa-m001.github.io/my-portfolio-website/og-image.svg">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ffde59'/%3E%3Ctext x='50' y='68' font-size='60' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%231a1a1a'%3EP%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <noscript><style>.reveal, .project-item { opacity: 1; transform: none; }</style></noscript>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" data-section="home">Home</a></li>
+            <li><a href="#about" data-section="about">About Me</a></li>
+            <li><a href="#projects" data-section="projects">Projects</a></li>
+            <li><a href="#skills" data-section="skills">Skills</a></li>
+            <li><a href="#education" data-section="education">Education</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <section id="home">
+        <h1 id="typewriter"></h1>
+        <img src="assets/profile.jpg"
+            alt="Priyanka Mhaske" width="200" height="200" onerror="this.style.display='none'">
+        <p><a class="btn" href="#projects">View Projects</a> <a class="btn" href="#contact">Contact Me</a></p>
+    </section>
+
+    <section id="about">
+        <div class="reveal">
+            <h2>About Me</h2>
+            <p>Hi, I'm Priyanka Mhaske &mdash; a Frontend Developer based in Nashik, India.
+                I recently graduated with a BCA and love turning ideas into real, working web applications.
+                I work with HTML, CSS, JavaScript, PHP, and MySQL, and I've been exploring AI integration using Python
+                and LLM APIs.</p>
+            <p>I enjoy building things end-to-end &mdash; from designing the interface to deploying the final product.
+                Some of my projects include a multi-user e-commerce platform for farming equipment and an AI-powered
+                quiz generator.
+                I'm currently learning React to build more dynamic, modern interfaces,
+                and I'm always excited to pick up new tools and keep growing as a developer.</p>
+            <p>I'm open to entry-level Frontend Developer and AI-adjacent roles &mdash; feel free to check out my work
+                or get in touch!</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="reveal">My Projects</h2>
+        <div class="project-grid">
+
+            <div class="project-item">
+                <h3>AgriBazaar &mdash; Farming Equipment Marketplace</h3>
+                <p>A responsive e-commerce platform for buying and selling agricultural tools, with distinct buyer and
+                    seller roles.
+                    Built with multi-user authentication, automated billing/invoice generation, and warehouse inventory
+                    management
+                    backed by custom CRUD operations in MySQL.</p>
+                <p style="font-size:0.9rem; margin-top:8px;"><strong>The hard part:</strong> keeping buyer and seller
+                    permissions cleanly separated across the same database while the invoice and inventory logic
+                    stayed in sync on every order.</p>
+                <div><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span
+                        class="tag">PHP</span><span class="tag">MySQL</span></div>
+                <a class="btn" href="https://github.com/priyankaa-m001/AgriBazar-" target="_blank" rel="noopener">View Code</a>
+            </div>
+
+            <div class="project-item">
+                <h3>AI Study Buddy &mdash; Quiz Generator</h3>
+                <p>An AI-powered web app that generates custom multiple-choice quizzes from any topic or notes,
+                    with instant scoring and explanations. Integrated the Groq LLM API to dynamically generate
+                    quiz content, with secure server-side handling of API keys.</p>
+                <p style="font-size:0.9rem; margin-top:8px;"><strong>The hard part:</strong> getting the LLM to return
+                    consistently structured quiz JSON (not just readable text) so the scoring logic could parse it
+                    reliably every time.</p>
+                <div><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Groq AI
+                        API</span></div>
+                <a class="btn" href="https://github.com/priyankaa-m001/ai-study-buddy" target="_blank" rel="noopener">View Code</a>
+            </div>
+
+            <div class="project-item">
+                <h3>Ask My Portfolio &mdash; AI Chatbot</h3>
+                <p>An interactive chatbot built with the OpenAI API that answers questions about my portfolio,
+                    deployed via Vercel serverless functions. Includes interactive API documentation with
+                    tabbed code samples and a live Try-It panel.</p>
+                <p style="font-size:0.9rem; margin-top:8px;"><strong>The hard part:</strong> keeping the OpenAI API key
+                    off the client entirely by routing every request through a Vercel serverless function.</p>
+                <div><span class="tag">JavaScript</span><span class="tag">OpenAI API</span><span
+                        class="tag">Vercel</span></div>
+                <a class="btn" href="https://github.com/priyankaa-m001?tab=repositories" target="_blank" rel="noopener">View Code</a>
+            </div>
+
+            <div class="project-item">
+                <h3>Brew &amp; Bliss</h3>
+                <p>A responsive landing page designed for a coffee shop, focused on clean layout and visual
+                    presentation.</p>
+                <div><span class="tag">HTML</span><span class="tag">CSS</span></div>
+                <a class="btn" href="https://github.com/priyankaa-m001/coffee-shop-webpage" target="_blank" rel="noopener">View Code</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="reveal">Skills</h2>
+        <div class="skills-track" aria-label="Skills list">
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Python</li>
+                <li>React (learning)</li>
+                <li>Git &amp; GitHub</li>
+                <li>AI APIs</li>
+                <li>Prompt Engineering</li>
+            </ul>
+            <ul aria-hidden="true">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Python</li>
+                <li>React (learning)</li>
+                <li>Git &amp; GitHub</li>
+                <li>AI APIs</li>
+                <li>Prompt Engineering</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="reveal">Education</h2>
+        <div class="education-item reveal">
+            <h3>BCA &mdash; Bachelor of Computer Applications</h3>
+            <p>BYK College, Savitribai Phule Pune University (SPPU)</p>
+            <p>2025 &nbsp;&middot;&nbsp; SGPA: 8.25</p>
+        </div>
+        <div class="education-item reveal">
+            <h3>HSC (12th, Commerce)</h3>
+            <p>KTHM College, Savitribai Phule Pune University (SPPU)</p>
+            <p>2022 &nbsp;&middot;&nbsp; 69%</p>
+        </div>
+    </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="reveal">
+            <h2>Contact</h2>
+            <p>Open to entry-level Frontend Developer &amp; AI-adjacent roles. Say hi!</p>
+            <div class="contact-links">
+                <a href="mailto:priyamhask2011@gmail.com" id="email-link">&#9993; Email Me</a>
+                <a href="https://www.linkedin.com/in/priyanka-mhaske" target="_blank" rel="noopener"
+                    id="linkedin-link">in LinkedIn</a>
+                <a href="https://github.com/priyankaa-m001" target="_blank" rel="noopener" id="github-link">&#9095;
+                    GitHub</a>
+            </div>
+            <p style="margin-top:24px; font-size:0.85rem;">&copy; <span id="year"></span> Priyanka Mhaske</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
