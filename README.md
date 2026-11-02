@@ -31,5 +31,5 @@ This project is licensed under the MIT Licence — see `LICENSE`.
 
 ## 📫 Contact
 - Email: priyamhask2011@gmail.com
-- LinkedIn: [linkedin.com/in/priyanka-mhaske](https://www.linkedin.com/in/priyanka-mhaske)
+- LinkedIn: [linkedin.com/in/priyanka-mhaske](https://www.linkedin.com/in/priyankamhaske)
 - GitHub: [github.com/priyankaa-m001](https://github.com/priyankaa-m001)
