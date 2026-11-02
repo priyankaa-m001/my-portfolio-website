@@ -6,8 +6,6 @@ A personal portfolio website showcasing my projects, skills, and background as a
 
 [https://priyankaa-m001.github.io/my-portfolio-website/](https://priyankaa-m001.github.io/my-portfolio-website/)
 
-To make this link work, enable GitHub Pages in this repository's Settings, from the `main` branch, root folder.
-
 ## 👩‍💻 About
 Hi, I'm Priyanka Mhaske — a Frontend Developer based in Nashik, India. I hold a BCA and work with HTML, CSS, JavaScript, PHP, and MySQL, with growing experience in AI integration using Python and LLM APIs (Groq, OpenAI).
 
